@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My dictionary</title>
+    </head>
+    <body>
+        <form method="POST" action="">
+            <label>Оригинал: </label>
+            <input type="text" name="word1" id="word1" required>
+            <br>
+            <label>Перевод:</label>
+            <input type="text" name="word2" id="word2" required>
+            <br>
+            <input type="submit" value="Отправить">
+            {% csrf_token %}
+        </form>
+    </body>
+</html>

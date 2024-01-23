@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My dictionary</title>
+  </head>
+  <body>
+      <table class="words_list">
+        <thead>
+            <tr>
+                <th>Оригинал</th>
+                <th>Перевод</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for a in dictionary %}
+            <tr>
+                <th>{{ a.0 }}</th>
+                <th>{{ a.1 }}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+  </body>
+</html>
